@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&family=Manjari:wght@100&family=Rajdhani:wght@500&display=swap');
+
+/* Início */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inspiration', cursive;
+    font-family: 'Manjari', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.inconeInicio {
+    height: 350px;
+    width: 350px;
+    margin-top: 45px;
+    margin-left: 460px;
+}
+
+h1 {
+    text-align: center;
+    color: #EA425B;
+    font-weight: bold;
+}
+
+@media (max-width: 920px) {
+    p {
+        padding-top: 7.5%;
+    }
+}
+
+@media (max-width: 920px) {
+    .inconeInicio {
+        margin-left: 15%;
+    }
+}
+
+/* Menu */
+nav {
+    display: flex;
+    height: 80px;
+    width: 100%;
+    background-color: #EA425B;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 0 100px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: #F6C863;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a.active, nav ul li a:hover {
+    color: #F6C863;
+}
+
+nav .menu-btn i {
+    color: #FFFFFF;
+    cursor: pointer;
+    display: none;
+}
+
+.iconeLogo {
+    padding-top: 3px;
+    width: 30px;
+    height: 30px;
+}
+
+@media (max-width: 920px) {
+    nav .menu-btn i {
+        display: block;
+    }
+
+    nav ul {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background-color: #EA425B;
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        display: block;
+        transition: all 0.3s ease;
+    }
+
+    nav ul.open {
+        left: 0;
+    }
+
+    nav ul li {
+        width: 100%;
+        margin: 50px 0;
+    }
+
+    nav ul li a {
+        font-size: 23px;
+    }
+
+    nav ul li a.active, nav ul li a:hover {
+        color: #F6C863;
+    }
+}
+
+/* Rodapé */
+footer{
+    background-color: #EA425B;
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: bold;
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+p {
+    padding-top: 2.5%;
+}
+
+@media (max-width: 920px) {
+    p {
+        padding-top: 5.5%;
+    }
+}
+
+/* Cards de Cada Categoria */
+
+.card1, .card2, .card3, .card4, .card5 {
+    margin-top: 5%;
+    margin-left: 5%;
+    display: inline-block;
+    padding: 10px;
+    width: 330px;
+    height: 120px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #EE6F82;
+    -webkit-box-shadow: 0px 1px 5px 4px rgba(227,227,227,1);
+    -moz-box-shadow: 0px 1px 5px 4px rgba(227,227,227,1);
+    box-shadow: 0px 1px 5px 4px rgba(227,227,227,1);
+    
+}
+
+.linkCard {
+    text-decoration: none;
+    color: #232323;
+}
+
+.linkCard:hover {
+    color: #FFFFFF;
+}
+
+.card1:hover, .card2:hover, .card3:hover, .card4:hover, .card5:hover {
+    cursor: pointer;
+    background-color: #EF5261;
+}
+
+.icone {
+    width: 50px;
+    height: 50px;
+}
+
+h3 {
+    padding-top: 15px;
+}
+
+@media (max-width: 920px) {
+    .card1, .card2, .card3, .card4, .card5 {
+        width: 220px;
+        width: 210px;
+    }
+}
+
+/* Cadastrar, Editar, Excluir */
+.cardForm {
+    margin-top: 25px;
+    margin-left: 250px;
+    margin-right: 250px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #F6C863;
+    -webkit-box-shadow: 0px 1px 5px 4px rgba(227,227,227,1);
+    -moz-box-shadow: 0px 1px 5px 4px rgba(227,227,227,1);
+    box-shadow: 0px 1px 5px 4px rgba(227,227,227,1);
+    height: 423px;
+    overflow-y: scroll;
+}
+
+h2 {
+    text-align: center;
+    padding-top: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #232323;
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #ea2034;
+    font-weight: bold;
+}
+
+.nomeCampoTexto {
+    padding-left: 30px;
+    font-weight: bold;
+}
+
+.editCampoTexto, .editCampoTextoID {
+    border-radius: 5px;
+    border: 1px solid #EF5261;
+    background-color: #EF5261;
+    padding: 3px;
+    margin-left: 5%;
+    width: 90%;
+    padding-left: 10px;
+}
+
+.editCampoTexto:hover {
+    cursor: pointer;
+    outline: 1px solid #ffdae0;
+}
+
+.editCampoTextoID:hover {
+    cursor: not-allowed;
+}
+
+.editCampoTexto::placeholder, .editCampoTextoID::placeholder {
+    color: #ffdae0;
+}
+
+.botaoCadastrar {
+    background-color: #EF5261;
+    color: #ffdae0;
+    width: 50%;
+    margin-left: 25%;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid #EF5261;
+    margin-bottom: 1.5%;
+}
+
+.botaoCadastrar:hover {
+    cursor: pointer;
+    background-color: #ea2034;
+}
+
+@media (max-width: 920px) {
+    .cardForm {
+        width: 70%;
+        margin-left: 15%;
+    }
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" type="imagem/png" href="img/icone-guia.png" />
+        <link rel="stylesheet" href="estilos.css">
+        <title>Passarela dos Sonhos</title>
+    </head>
+<body>
+    <nav>
+        <div class="logo"> <img class="iconeLogo" src="img/icone-guia.png"> <a href="index.html" class="active"> PASSARELA DOS SONHOS </a> </div>
+        <div class="menu-btn">
+            <i class="fa fa-bars fa-2x" onclick="menuResponsivo()"></i>
+        </div>
+        <ul>
+            <li> <a href="vendas.html"> Vendas </a> </li>
+            <li> <a href="produtos.html"> Produtos </a> </li>
+            <li> <a href="clientes.html" class="active"> Clientes </a> </li>
+            <li> <a href="funcionarios.html"> Funcionários </a> </li>
+            <li> <a href="fornecedores.html"> Fornecedores </a> </li>
+        </ul>
+    </nav>
+    <script src="main.js"></script>
+
+    <div class="cardForm">
+        <caption> <a href="clientes.html">Voltar</a> <h2>Editar Cliente</h2></caption>
+        <form action="" method="post">
+            <br>
+            <label class="nomeCampoTexto"> Número do Cliente: </label> <br> <input class="editCampoTexto" type=number name=campo1 placeholder="número do cliente..." disabled=""><br><br>
+            <label class="nomeCampoTexto"> CPF: </label> <br> <input class="editCampoTexto" type=text name=campo1 placeholder="cpf..."><br><br>
+            <label class="nomeCampoTexto"> Nome Completo: </label> <br> <input class="editCampoTexto" type=text name=campo1 placeholder="nome completo..."><br><br>
+            <label class="nomeCampoTexto"> Estado Civil: </label> <br> <input class="editCampoTexto" type=text name=campo1 placeholder="estado civil..."><br><br>
+            <label class="nomeCampoTexto"> Data de Nascimento: </label> <br> <input class="editCampoTexto" type=text name=campo1 placeholder="data de nascimento..."><br><br>
+            <label class="nomeCampoTexto"> Telefone de Contato: </label> <br> <input class="editCampoTexto" type=text name=campo1 placeholder="telefone de contato..."><br><br>
+            <label class="nomeCampoTexto"> E-mail: </label> <br> <input class="editCampoTexto" type=email name=campo1 placeholder="e-mail..."><br><br>
+            <label class="nomeCampoTexto"> Estado: </label> <br> <input class="editCampoTexto" type=text name=campo1 placeholder="estado..."><br><br>
+            <label class="nomeCampoTexto"> Cidade: </label> <br> <input class="editCampoTexto" type=text name=campo1 placeholder="cidade..."><br><br>
+            <label class="nomeCampoTexto"> Bairro: </label> <br> <input class="editCampoTexto" type=text name=campo1 placeholder="bairro..."><br><br>
+            <label class="nomeCampoTexto"> Rua: </label> <br> <input class="editCampoTexto" type=text name=campo1 placeholder="rua..."><br><br>
+            <label class="nomeCampoTexto"> Número: </label> <br> <input class="editCampoTexto" type=text name=campo1 placeholder="número..."><br><br>
+            <input class="botaoCadastrar" type=submit value="EDITAR CLIENTE">
+        </form>
+    </div>
+
+    <footer id="rodape">
+        <p>Aluna: Nataly Coelho Nogueira <br> Professor: Felipe Roncalli de Paula Carneiro</p>
+    </footer>
+</body>
+</html>
